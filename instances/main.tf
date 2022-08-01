@@ -37,8 +37,9 @@ data "aws_security_group" "kube_sg_id" {
 #   most_recent = true
 }
 
+
 resource "aws_key_pair" "kube_cp_key" {
-  key_name   = "id_rsa.pub"
+  key_name   = "kube_cp_key"
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeLst+vpB6nfCIdp8/6JSY7BWwYV323FSdXcnbJRMbCB+vpgTy2x8pdmQdupnBpqdvfHaZg+giD3djsUS3JtiLIgNfzye70+Cago2xvUcHkdu6hZJZw36CoegKN28eAGzZVFujGp9IV2MOHvXbjyojArMdCCEwoWiFxCyB68JCQXbcjc1FQSJ387LrSpYcJxbSNntZyqBXgZ/PM/FKLLtBgmsQeai/KcCPp2LStnbJ+QJJoOzKyLiURg4sAnXjfPevNcsLrMZoTCiuv1d2s0krJerViOwAu7pI79Z4CVzaSqnR+rt+NFyUi0MwGV+FRNDvFVqAsJqX8RZaIPL1VSEH admin@admins-iMac.local"
 }
 
