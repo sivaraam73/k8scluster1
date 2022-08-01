@@ -330,7 +330,7 @@ pipeline{
                 stage("Destroy state bucket"){
                     steps{
                         sh '''
-                            aws s3 rb s3://sivaraam-k8scluster1-tf-state --force
+                            aws s3 rb s3://<bucket_name> --force
                             '''
                     }
                 }
