@@ -38,8 +38,8 @@ data "aws_security_group" "kube_sg_id" {
 }
 
 resource "aws_key_pair" "kube_cp_key" {
-  key_name   = "ec2-test-key"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCBi1ADkcsfGbC4uo5RjXJn5QUB2xBlsHTFetQCJEOjpqtXbo5cdhmYbPCgJA0ONkxhgEzVEL/tD4epx0QkchdQ0vvyCj/RnzbkujNjnjTu0I1jf898HX2ie/24Pnqx3pFlNBaVBRfTN8zfKfpLxDJ+A61PaP8zs/PCM9z4meO1vx0q4fXzw8LWounuUUmanXG9qL1TeivczfgwpGLqayGWMguV/qoqbom67tGAZGNZflRTC1sfuvr3nBCudjkSNgOFc09fNvIUBNKmbdxOBXPM71G8IOfT3yhQ2oBv2KWVR6HHMbjEjZtlttgvr5NicMhqUqa2gc1vLyuZgBHzMBq9"
+  key_name   = "id_rsa.pub"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeLst+vpB6nfCIdp8/6JSY7BWwYV323FSdXcnbJRMbCB+vpgTy2x8pdmQdupnBpqdvfHaZg+giD3djsUS3JtiLIgNfzye70+Cago2xvUcHkdu6hZJZw36CoegKN28eAGzZVFujGp9IV2MOHvXbjyojArMdCCEwoWiFxCyB68JCQXbcjc1FQSJ387LrSpYcJxbSNntZyqBXgZ/PM/FKLLtBgmsQeai/KcCPp2LStnbJ+QJJoOzKyLiURg4sAnXjfPevNcsLrMZoTCiuv1d2s0krJerViOwAu7pI79Z4CVzaSqnR+rt+NFyUi0MwGV+FRNDvFVqAsJqX8RZaIPL1VSEH admin@admins-iMac.local"
 }
 
 
