@@ -39,7 +39,7 @@ data "aws_security_group" "kube_sg_id" {
 
 resource "aws_key_pair" "kube_cp_key" {
   key_name   = "etkube-cp-instance-key"
-  public_key = "ec2-test-key"
+  public_key = "ec2-test-key_id_rsa.pub"
 }
 
 
