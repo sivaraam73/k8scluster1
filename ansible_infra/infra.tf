@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "sivaraam-k8scluster1-TF-state"
+    bucket = "<bucket_name>"
     key    = "<state_file_name>"
     region = "us-east-1"
   }
@@ -22,7 +22,7 @@ provider "aws" {
 module "s3-bucket" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "2.6.0"
-  bucket= "sivaraam-k8scluster1-ansible"
+  bucket  = "<ansible_bucket>"
 
   block_public_acls       = true
   block_public_policy     = true
