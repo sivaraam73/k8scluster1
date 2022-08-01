@@ -38,8 +38,8 @@ data "aws_security_group" "kube_sg_id" {
 }
 
 resource "aws_key_pair" "kube_cp_key" {
-  key_name   = "ec2-test-key.pem"
-  public_key = "ec2-test-key_id_rsa.pub"
+  key_name   = "ec2-test-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCBi1ADkcsfGbC4uo5RjXJn5QUB2xBlsHTFetQCJEOjpqtXbo5cdhmYbPCgJA0ONkxhgEzVEL/tD4epx0QkchdQ0vvyCj/RnzbkujNjnjTu0I1jf898HX2ie/24Pnqx3pFlNBaVBRfTN8zfKfpLxDJ+A61PaP8zs/PCM9z4meO1vx0q4fXzw8LWounuUUmanXG9qL1TeivczfgwpGLqayGWMguV/qoqbom67tGAZGNZflRTC1sfuvr3nBCudjkSNgOFc09fNvIUBNKmbdxOBXPM71G8IOfT3yhQ2oBv2KWVR6HHMbjEjZtlttgvr5NicMhqUqa2gc1vLyuZgBHzMBq9"
 }
 
 
