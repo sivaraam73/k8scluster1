@@ -8,8 +8,8 @@ pipeline{
         SKIP="N"
         TERRADESTROY="N"
         FIRST_DEPLOY="Y"
-        STATE_BUCKET="<bucket_name>"
-        ANSIBLE_BUCKET_NAME="<ansible_bucket>"
+        STATE_BUCKET="sivaraam-k8scluster1-TF-state"
+        ANSIBLE_BUCKET_NAME="sivaraam-k8scluster1-ansible"
     }
 
 
@@ -23,7 +23,7 @@ pipeline{
             }
             steps{
                 sh'''
-                aws s3 mb s3://<bucket_name>'''
+                aws s3 mb s3://sivaraam-k8scluster1-TF-state'''
                 
             }
         }
@@ -330,7 +330,7 @@ pipeline{
                 stage("Destroy state bucket"){
                     steps{
                         sh '''
-                            aws s3 rb s3://<bucket_name> --force
+                            aws s3 rb s3://sivaraam-k8scluster1-TF-state --force
                             '''
                     }
                 }
