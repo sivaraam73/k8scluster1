@@ -6,8 +6,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "<bucket_name>"
-    key    = "<state_name>"
+    bucket = "sivaraam-k8scluster1-tf-state"
+    key    = "terraform.tfstate"
     region = "us-east-1"
   }
 }
