@@ -1,3 +1,3 @@
 variable "ansible_bucket"{
-    default="<bucket_name>"
+    default="sivaraam-k8scluster1-ansible"
 }
