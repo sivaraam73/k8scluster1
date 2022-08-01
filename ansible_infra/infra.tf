@@ -22,7 +22,7 @@ provider "aws" {
 module "s3-bucket" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "2.6.0"
-  bucket  = "<ansible_bucket>"
+  bucket  = var.ansible_bucket
 
   block_public_acls       = true
   block_public_policy     = true
