@@ -18,7 +18,7 @@ provider "aws" {
 
 
 resource "aws_vpc" "kubevpc" {
-  cidr_block = "10.32.0.0/16"
+  cidr_block = "192.168.0.0/16"
   enable_dns_hostnames = true
 
   tags = {
@@ -189,7 +189,7 @@ resource "aws_route_table" "kube_rt" {
 
 resource "aws_subnet" "kube_subnet" {
   vpc_id     = resource.aws_vpc.kubevpc.id
-  cidr_block = "10.32.1.0/24"
+  cidr_block = "192.168.1.0/24"
   availability_zone = "us-east-1a"
   map_public_ip_on_launch = true
 
@@ -200,7 +200,7 @@ resource "aws_subnet" "kube_subnet" {
 
 resource "aws_subnet" "kube_subnet_2" {
   vpc_id     = resource.aws_vpc.kubevpc.id
-  cidr_block = "10.32.2.0/24"
+  cidr_block = "192.168.2.0/24"
   availability_zone = "us-east-1b"
   map_public_ip_on_launch = true
 
